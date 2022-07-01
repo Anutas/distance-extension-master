@@ -1,7 +1,7 @@
 ({
-    name: "DISTANCE", // Category Name
+    name: "DISTANCE-Kidbright32i", // Category Name
     description: "ZX-Distance Sensor",
-    author: "Aphibun",
+    author: "Anutas",
     category: "Sensors",
     version: "1.0.0",
     icon: "/static/icon.png", // Category icon
