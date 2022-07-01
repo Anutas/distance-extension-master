@@ -114,8 +114,8 @@ class TimeoutError(RuntimeError):
 class VL53L0X:
     def __init__(self,i2c = I2C(scl=Pin(22), sda=Pin(21)), address=0x29):
         machine = os.uname().machine
-        if ("KidBright32" in machine) or ("KidMotor V4" in machine):
-            self.i2c = I2C(1, scl=Pin(5), sda=Pin(4), freq=400000)
+        if ("KidBright32" in machine) or ("KidBright32i" in machine):
+            self.i2c = I2C(1, scl=Pin(6), sda=Pin(5), freq=400000)
         elif "Mbits" in machine:
             self.i2c = I2C(0, scl=Pin(21), sda=Pin(22), freq=400000)
         else:
